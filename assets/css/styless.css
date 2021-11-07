@@ -72,6 +72,11 @@ button{
     margin-bottom: 2rem;
     color: #857E61;
 }
+.InverseButton{
+    color: #121212;
+    border: 1px solid #121212;
+    margin-bottom: 50px;
+}
 
 /* Nav Menu */
 .nav-menu{
@@ -81,16 +86,13 @@ button{
     justify-content: center;
     position: absolute;
     z-index: 9999;
-}
-.navController{
+}.navController{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.navMenu-logo{
+}.navMenu-logo{
     width: 20%;
-}
-.navList{
+}.navList{
     display: flex;
     flex-direction: column;
     padding:35px 0px;
@@ -101,25 +103,21 @@ button{
     font-family: var(--font-text);
     text-align: center;
     background-color: var(--white-color);
-}
-.menuActive{
+}.menuActive{
     display: flex!important;
-}
-.closeMenu{
+}.closeMenu{
     width: 70%;
     display: flex;
     justify-content: end;
     display: none;
-}
-.toggleMenu{
+}.toggleMenu{
     display: block;
     width: 70%;
     display: flex;
     justify-content: end;
     display: none;
 
-}
-.toggleMenu box-icon,.closeMenu box-icon{
+}.toggleMenu box-icon,.closeMenu box-icon{
     cursor: pointer;
 }
 
@@ -136,8 +134,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.backgroundHeader{
+}.backgroundHeader{
     -webkit-backdrop-filter: brightness(20%);
     backdrop-filter: brightness(20%);
     content: "";
@@ -147,13 +144,12 @@ button{
     top: 0;
     left: 0;
     z-index: 0;
-}
-.titleHeader{
+}.titleHeader{
     margin-bottom: 50px;
     text-transform: capitalize;
     color: var(--white-color);
-}
-.contentHeader{
+}.contentHeader{
+    width: 80%;
     position: absolute;
     z-index: 99;
 }
@@ -162,22 +158,21 @@ button{
 .artistContainer{
     margin-top: 75px;
     padding: 20px;
-}
-.artist{
+}.swipperContent{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.imgArtist{
-    width: 200px;
+}.imgArtist{
+    height: 250px;
+    width: auto;
     margin-bottom: 20px;
-}
-.titleArtist{
+    align-self: center;
+}.titleArtist{
     margin-bottom: 20px;
-}
-.artistDescription{
+    text-align: left;
+}.artistDescription{
     width: 80%;
-    text-align: center;
+    text-align: justify;
+    padding-bottom: 30px;
+}.skillArtist{
+    font-size: 1rem;
 }
