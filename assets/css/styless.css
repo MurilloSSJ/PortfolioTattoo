@@ -18,45 +18,38 @@
     --h3-size:1.5rem;
     --p-size:1rem;
 }
+
+/*Estilos gerais*/
 *{
     margin: 0;
     padding: 0;
-}
-/*Estilos gerais*/
-ul{
+}html{
+    scroll-behavior: smooth;
+}ul{
     list-style: none;
-}
-a{
+}a{
     text-decoration: none;
     color: currentColor;
-}
-h1,h2,h3,h4,p{
+}h1,h2,h3,h4,p{
     color: var(--text-color);
-}
-h1 span, h2 span, h3 span, h4 span,p span{
+}h1 span, h2 span, h3 span, h4 span,p span{
     color: var(--span-color);
-}
-h1{
+}h1{
     font-size: var(--h1-size);
     font-family: var(--font-title);
-}
-h2{
+}h2{
     font-size: var(--h2-size);
     font-family: var(--font-title);
-}
-h3{
+}h3{
     font-size: var(--h3-size);
     font-family: var(--font-title);
-}
-p{
+}p{
     font-size: var(--p-size);
     font-family: var(--font-text);
-}
-img{
+}img{
     width: 100%;
     height: auto;
-}
-button{
+}button{
     background-color: transparent;
     color: var(--white-color);
     border: 1px solid var(--white-color);
@@ -66,13 +59,11 @@ button{
     text-transform: uppercase;
     font-family: var(--font-title);
     letter-spacing: 2px;
-}
-.titleSection{
+}.titleSection{
     font-size: 1.6rem;
     margin-bottom: 2rem;
     color: #857E61;
-}
-.InverseButton{
+}.InverseButton{
     color: #121212;
     border: 1px solid #121212;
     margin-bottom: 50px;
@@ -152,6 +143,13 @@ button{
     width: 80%;
     position: absolute;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+.contentHeader a{
+    align-self: center;
+    justify-self: end;
+    cursor: pointer;
 }
 
 /*Team*/
