@@ -174,3 +174,13 @@
 }.skillArtist{
     font-size: 1rem;
 }
+
+/*Portfolio*/
+.portfolioContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,33%));
+    align-content: center;
+    justify-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
