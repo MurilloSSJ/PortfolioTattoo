@@ -164,6 +164,7 @@
     width: auto;
     margin-bottom: 20px;
     align-self: center;
+    border-radius: 100%;
 }.titleArtist{
     margin-bottom: 20px;
     text-align: left;
@@ -176,11 +177,82 @@
 }
 
 /*Portfolio*/
-.portfolioContainer{
+.titlePortfolio{
+    padding-left: 20px;
+}.portfolioContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,33%));
+    grid-template-columns: repeat(auto-fill,minmax(400px,30%));
     align-content: center;
     justify-content: center;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    margin-bottom: 50px;
+}.itemPortfolio{
+    height: 400px;
+}.itemPortfolio img{
+    height: 100%;
+}
+
+/*footer*/
+.footerContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content:center;
+    background-color: #121212;
+    padding: 20px 0px;
+}.iconFooter{
+    margin: 0px 20px;
+}.iconFooterSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}.FooterDescription{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Versão desktop*/
+@media screen and (min-width:960px){
+    .navList{
+        position: absolute;
+        top: 170px;
+    }
+    .headerContainer{
+        justify-content: center;
+        padding-top: 150px;
+    }
+    .titleHeader{
+        width: 75%;
+        margin-bottom: 80px;
+    }
+    .headerContainer{
+        min-height: calc(100vh - 150px);
+    }
+    .contentHeader a{
+        align-self: center;
+        justify-self: center;
+        cursor: pointer;
+    }
+    .swipperContent{
+        flex-direction: column;
+    }
+    .swiper-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .swiper-slide{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .InverseButton{
+        padding: 15px 40px;
+        align-self: center;
+    }
 }
